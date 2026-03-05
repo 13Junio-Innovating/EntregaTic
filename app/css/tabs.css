@@ -1,0 +1,144 @@
+@import url('menu.css');
+
+
+.nav {
+    justify-content: center;
+}
+
+.nav a {
+    padding: 1.25rem;
+}
+
+.nav a i {
+    color: var(--text-primary);
+    margin: 0.625rem;
+    font-size: 1.5625rem !important;
+}
+
+.nav .nav-item a {
+    display: block;
+    color: var(--text-primary);
+}
+
+.nav .nav-item a:hover {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.tab-pane {
+    color: var(--text-primary);
+    margin-top: 0.9375rem;
+}
+
+.nav-tabs {
+    border-bottom: 0.0625rem solid var(--text-primary);
+}
+
+.nav-item:hover {
+    background: var(--text-hover);
+    color: var(--text-primary);
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius: 0.9375rem;
+    border: none;
+}
+
+.nav-item a.active {
+    background: var(--text-hover);
+    color: var(--text-primary);
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius: 0.9375rem;
+    border: none;
+}
+
+.slider {
+    background-color: var(--bg-hover);
+    border-radius: 6.25rem;
+    padding: 0.0625rem;
+    margin: 0.625rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 3.1875rem;
+    height: 1.8125rem;
+}
+
+.slider::after {
+    content: "";
+    display: flex;
+    top: 0.1437rem;
+    left: 0.125rem;
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: var(--text-hover);
+    border-radius: 12.5rem;
+    position: absolute;
+    box-shadow: transparent 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+    transition: left 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: left, background-color;
+}
+
+.switch input[type="checkbox"]:checked+.slider {
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 1px inset, #22cc3f 0px 0px 0px 2px inset, #22cc3f 0px 0px 0px 24px inset,
+        rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+}
+
+.switch input[type="checkbox"]:checked+.slider::after {
+    left: 24px;
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    border: 0.0625rem solid var(--bg-card);
+    border-radius: 0.9375rem;
+    padding: 3.125rem;
+    box-shadow: var(--shadow);
+    height: 25rem;
+}
+
+form input {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.form-floating {
+    color: var(--text-secondary);
+}
+
+
+@media (max-width: 500px) {
+
+    .center {
+        height: auto;
+        margin-bottom: 2.5rem;
+    }
+
+    .card {
+        height: auto;
+        margin-top: 3.125rem;
+    }
+}
+
+/* landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    .card {
+        height: 100%;
+        margin-top: 4.375rem
+    }
+
+    .center {
+        height: 100%;
+    }
+}

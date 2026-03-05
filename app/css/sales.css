@@ -1,0 +1,194 @@
+@import url('global.css');
+
+.center {
+    display: inherit;
+    margin-top: 50%;
+}
+
+.section-product-list {
+    margin-top: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    margin-bottom: 0.625rem;
+    box-shadow: var(--shadow);
+}
+
+.select2-container--bootstrap-5 {
+    width: 100% !important;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single {
+    padding: 1.875rem !important;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: -1.6875rem;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option {
+    font-size: 2.1rem !important;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.form-control {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 800;
+    background: #fff;
+    color: var(--text-secondary);
+}
+
+.container_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    box-shadow: var(--shadow);
+}
+
+.container-product-preview {
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    box-shadow: var(--shadow);
+}
+
+.container-product-preview img {
+    height: 25rem;
+    background-color: #fff;
+    border-radius: 0.9375rem;
+    padding: 0.625rem;
+}
+
+.container-cupom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    margin-bottom: 0.625rem;
+    box-shadow: var(--shadow);
+}
+
+.container-cupom .cupom {
+    background-color: #fff;
+    border-radius: 0.9375rem;
+    width: 100%;
+    padding: 0.625rem;
+    height: 28.125rem;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+}
+
+.subtotal {
+    width: 100%;
+    color: var(--bg-hover);
+    font-weight: bold;
+}
+
+.container-operation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5625rem;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    margin-bottom: 0.625rem;
+    box-shadow: var(--shadow);
+}
+
+.container-operation button {
+    margin-right: 1.875rem;
+    margin-left: 1.875rem;
+    background-color: #152C47;
+    color: #fff;
+    border: none;
+    border-radius: 0.9375rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.container-operation button:hover {
+    background-color: var(--bg-hover);
+    transform: scale(1.05);
+}
+
+.container-system {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    background: var(--bg-card);
+    border-radius: 0.9375rem;
+    margin-bottom: 0.625rem;
+    color: var(--text-secondary);
+    box-shadow: var(--shadow);
+}
+
+.container-system label {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal-content {
+    background-color: var(--bg-card);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.modal-title {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+}
+
+.modal-title .btn-close {
+    font-size: 1.25rem;
+}
+
+.modal-content .form-floating>label {
+    margin-left: 0.625rem;
+}
+
+footer {
+    height: 30vh;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: -1.1rem;
+    }
+
+    thead {
+        font-size: 0.6rem;
+    }
+
+    .container-operation button {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,276 @@
+@import url('global.css');
+
+:root {
+    --text-primary: #000000;
+    --text-primary-hover: #FBB016;
+    --text-secondary: #333333;
+    --text-subtitle: #515151;
+    --bg-main: #FFFFFF;
+    --text-hover: #FBB016;
+    --bg-hover: #FBB016;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --bg-card: #f5f5f5;
+}
+
+#container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-enter {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 8.0625rem;
+    border-bottom-left-radius: 8.0625rem;
+    padding: 0.625rem;
+    font-size: 1.125rem;
+}
+
+.btn-enter:hover {
+    transform: scale(1.1);
+    color: #FFF;
+    transition: all .3s ease-in;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 0.9375rem;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    background: var(--bg-card);
+}
+
+.card-box a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem;
+    font-size: 1.25rem;
+    border: 0.0625rem solid #000;
+    padding: 2.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--text-primary);
+    border-radius: 0.9375rem;
+}
+
+.card .menu-icon {
+    font-size: 3.125rem;
+}
+
+.card-sales-history {
+    height: 30% !important;
+}
+
+/* personalizar o offcanvas */
+.offcanvas {
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
+    color: var(--text-primary);
+    border-radius: 0.9375rem;
+}
+
+.offcanvas-header button {
+    color: var(--text-primary) !important;
+
+}
+
+.offcanvas.offcanvas-top {
+    height: min-content !important;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container i {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.menu-box {
+    margin-right: 1.875rem;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.9375rem;
+    padding: 0.9375rem;
+    background: var(--bg-main);
+    text-align: center;
+}
+
+.menu-box:hover {
+    transition: all .3s ease-in;
+    box-shadow: var(--shadow);
+    background: var(--bg-hover);
+}
+
+.dropdown-menu {
+    background: var(--bg-main);
+    border-radius: 0.9375rem;
+    box-shadow: var(--shadow);
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    line-height: 3.375rem;
+}
+
+.dropdown-menu.show {
+    margin-left: 50% !important;
+}
+
+.btn-close {
+    font-size: 1.875rem;
+    margin-right: 2rem !important;
+}
+
+.dropdown-menu {
+    background: var(--bg-main);
+    border-radius: 0.9375rem;
+    box-shadow: var(--shadow);
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    line-height: 3.375rem;
+}
+
+.dropdown-item {
+    color: var(--text-secondary);
+    transition: 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--text-hover);
+    color: #fff;
+}
+
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+    color: #b0b0b0 !important;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+
+/* responsive */
+@media (max-width: 500px) {
+    .card {
+        height: 85%;
+    }
+
+    .card-box {
+        width: 80vw !important;
+        margin: auto;
+    }
+
+    .card-box a {
+        padding: 1.25rem;
+        font-size: 1rem;
+        margin: 0.3125rem;
+    }
+
+    .card .fa-solid {
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem
+    }
+
+    .menu-container {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-box {
+        margin-bottom: 0.625rem;
+    }
+
+    .offcanvas.offcanvas-top {
+        height: auto;
+    }
+
+    .dropdown-menu.show {
+        margin-left: auto !important;
+    }
+
+
+}
+
+/* tela 1280x800 macbook pro 2011 */
+@media (min-width: 1280px) and (max-height: 800px) {
+
+    .card-report {
+        height: inherit !important;
+        margin-top: 0.625rem;
+    }
+
+    .center {
+        margin-bottom: 50px;
+    }
+
+    .card {
+        height: 100vh;
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 800px) and (max-height: 1370px) {
+
+    .menu-container {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-box {
+        margin-bottom: 0.625rem;
+    }
+
+    .offcanvas.offcanvas-top {
+        height: auto;
+    }
+
+}
+
+
+/* landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .card {
+        height: 80%;
+    }
+
+    .card-box a {
+        padding: 1.25rem;
+        font-size: 0.75rem;
+        margin: 0.3125rem;
+    }
+
+    .card .fa-solid {
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem
+    }
+
+    .menu-container {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-box {
+        margin-bottom: 0.625rem;
+    }
+
+    .offcanvas.offcanvas-top {
+        height: auto;
+    }
+
+    .form-floating {
+        font-size: 10px;
+    }
+}
